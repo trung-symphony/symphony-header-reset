@@ -1,0 +1,77 @@
+/* === Z-INDEX MANAGEMENT === */
+
+/*
+    Manage the z-index
+
+    Problem:
+    ------------
+        When apply a z-index on an element, instead of doing it like this
+
+        .component_1 {
+            z-index: 1;
+        }
+
+        .component_2 {
+            z-index: 2;
+        }
+        .....
+        .component_n {
+            z-index: m; // where 'n' & 'm' are any arbitrary number
+        }
+
+        as project grows, it will get harder to manage all the z-index
+
+    Solution:
+    -------------
+        Map the z-index value with the component name and use the 'layer' mixin along with the component name
+
+        Example (use the same one above):
+
+        ---> z-index.scss
+        $layers: (
+            component_1: 1,
+            component_2: 2,
+            .....
+            component_n: m
+        )
+
+        ---> _component_1.scss
+        .component_1 {
+            @include layer(component_1);
+        }
+
+        ---> _component_2.scss
+        .component_2 {
+            @include layer(component_2);
+        }
+
+        ---> _component_n.scss
+        .component_n {
+            @include layer(component_n);
+        }
+*/
+
+$layers: (
+  site-header: 1030,
+  site-header-mobile: 1000,
+  modal: 15000,
+  site-search: 1100,
+  logo: 1000,
+  account-dropdown-menu: 1140,
+  verify-email-banner: 1000,
+  promotion-banner: 900,
+  mobile-cart-btn: 1000,
+  cart-dropdown: 50000,
+  big-screen-cart-container: 10000,
+  p-checkout-site-nav: 11000,
+  back-to-top: 1000,
+  product-confirm-checkout: 1100,
+  c-subscription-pop-up: 2000,
+  site-overlay: 1500,
+  sp-footer-subscription-success-message: 2000
+) !default;
+
+@mixin layer($layer-name) {
+  z-index: map-get($layers, $layer-name);
+};
+

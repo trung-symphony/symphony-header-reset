@@ -1,0 +1,23 @@
+{
+  "name": "Symphony Header Reset",
+  "version": "0.1.0",
+  "authors": [
+    "Trung Nguyen <trung@symphonycommerce.com>"
+  ],
+  "main": "scss/_index.scss",
+  "devDependencies": {},
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "tests",
+    "Gemfile",
+    "images",
+    "fonts",
+    "js",
+    "package.json",
+    "config.*",
+    "*.gem"
+  ]
+}
