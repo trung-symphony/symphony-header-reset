@@ -3,11 +3,11 @@
 
 
 /* === USE CONFIG === */
-@import 'global/header/config';
+@import 'config';
 
 
 /* === DEFAULT CONFIG === */
-@import 'global/header/default/default-config';
+@import 'default/default-config';
 
 
 /* === UTILS === */
@@ -20,11 +20,11 @@
 
 
 /* === RESET === */
-@import 'global/header/default/reset';
+@import 'default/reset';
 
 
 /* === CUSTOM HEADER === */
-@import 'global/header/header-custom';
+@import 'header-custom';
 
 
 /* === COMPONENTS IN HEADERS === */
