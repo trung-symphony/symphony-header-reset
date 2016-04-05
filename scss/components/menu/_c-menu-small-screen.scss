@@ -6,10 +6,6 @@
   margin-bottom: 0;
 }
 
-div.nav-collapse.collapse.togglemenu.clearfix.is-active.in {
-    height: inherit !important;
-}
-
 .nested-menu-mobile .nesting-level-two a {
     @include bp(screen-max-md) {
         display: block !important;
