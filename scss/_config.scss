@@ -1,18 +1,11 @@
 //=============================================
-// User Config
+// CONFIG
 //=============================================
 
 
-//-----
-// Site Header
-//----------
-
-/* --------------
-    SMALL SCREEN
-   -------------- */
-
-/* 
-    @options
+/* === HEADER === */
+/*
+    @Options
         * @option   {1, 2}   [switch between theme]
  */
 $site-header-theme: 2;
@@ -21,33 +14,20 @@ $site-header-height-sm: 80px;
 $site-header-bg-sm: $brand-2;
 
 
-/* --------------
-     BIG SCREEN
-   -------------- */
-
-$site-header-height-md: 90px;
-$site-header-bg-md: $gray-7;
-
-/* ------------------------------------------------ */
+        /* === SITE HEADER (BIG SCREEN) === */
+        $site-header-height-md: 90px;
+        $site-header-bg-md: $gray-7;
 
 
 
 
 
-//-----
-// Site Promo Banner
-//----------
-
-/* --------------
-    SMALL SCREEN
-   -------------- */
-
+/* === PROMO-BANNER === */
 /* 
     @Options
         * @Option 1   boolean   [show/hide]
  */
 $site-promo-banner-sm: false;
-$site-promo-banner-md: true;
 
 $site-promo-banner-height: 40px;
 $site-promo-banner-height-sm: 40px;
@@ -65,26 +45,16 @@ $site-promo-banner__text-color: $gray-7;
 $site-promo-banner__text-size: 12px, 12px, 13px; 
 
 
-/* --------------
-     BIG SCREEN
-   -------------- */
-
-$site-promo-banner-height-md: 40px;
-
-/* ------------------------------------------------ */
+        /* === PROMO-BANNER (BIG SCREEN) === */
+        $site-promo-banner-md: true;
+        
+        $site-promo-banner-height-md: 40px;
 
 
 
 
 
-//-----
-// Site Menu
-//----------
-
-/* --------------
-    SMALL SCREEN
-   -------------- */
-
+/* === MENU === */
 $site-menu-link-bg-sm: $gray-7;
 $site-menu-link-color-sm: $brand-2;
 
@@ -103,12 +73,8 @@ $site-menu-link-bg-sm--secondary--hover: $gray-6;
 $site-menu-link-color-sm--secondary--hover: $brand-1;
 
 
-/* --------------
-     BIG SCREEN
-   -------------- */
+        /* === MENU (BIG SCREEN) === */
+        $site-menu-link-color-md: $gray-2;
+        $site-menu-link-bg--hover: $gray-7;
+        $site-menu-link-color--hover: $brand-1;
 
-$site-menu-link-color-md: $gray-2;
-$site-menu-link-bg--hover: $gray-7;
-$site-menu-link-color--hover: $brand-1;
-
-/* ------------------------------------------------ */
