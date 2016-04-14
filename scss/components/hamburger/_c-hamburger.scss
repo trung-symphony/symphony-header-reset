@@ -4,6 +4,11 @@
     }
 }
 
+/* === HAMBURGER SLICES === */
+.navbar .btn-navbar .icon-bar {
+    background: $hamburger-color;
+}
+
 
 /* 
     COMPOSE
@@ -19,3 +24,4 @@
         margin-top: 3px;
     }
 }
+
