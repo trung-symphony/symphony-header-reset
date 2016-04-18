@@ -47,7 +47,7 @@
 .header-mobile {
     @include bp(screen-max-md) {
         position: fixed;
-        height: 80px;
+        height: $site-header-height-sm;
         top: 0;
     }
 }
