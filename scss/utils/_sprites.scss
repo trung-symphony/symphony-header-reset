@@ -31,15 +31,10 @@ $twitter: -96px -0px 48px 48px !default;
     @include sprite-height($sprite);
 }
 
-.sprite-icon {
-    background-image: $sprite-image;
-}
-
-
 //-----------------
 // Custom Sprites
 //-----------------
 @mixin custom-sprite($sprite) {
     @include sprite($sprite);
-    @extend .sprite-icon; 
+    background-image: $sprite-image;
 }
