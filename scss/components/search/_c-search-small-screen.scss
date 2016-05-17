@@ -8,7 +8,6 @@ $search-height: 51px;
     height: 100%;
     width: 100%;
     padding: 0;
-    @extend .a-fade-in;
     @include layer(site-search);
   }
 }
