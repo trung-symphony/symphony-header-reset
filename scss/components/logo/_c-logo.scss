@@ -35,7 +35,7 @@
   
     .sticky-logo img {
         @include bp(screen-md) {
-            width: 65px;
+            width: $site-logo-width;
             overflow: hidden;
         }
     } 
