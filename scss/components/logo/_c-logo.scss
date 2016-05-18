@@ -33,15 +33,11 @@
         }
     }
     
-
-    /* Reference defaultConfig */
-    $site-logo-width-sm: nth($site-logo-width, 1);
-    $site-logo-width-lg: nth($site-logo-width, 2);
     .sticky-logo img {
-        width: $site-logo-width-sm;
+        width: nth($site-logo-width, 1);
 
         @include bp(screen-md) {
-            width: $site-logo-width-lg;
+            width: nth($site-logo-width, 2);
             overflow: hidden;
         }
     } 
