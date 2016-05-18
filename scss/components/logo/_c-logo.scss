@@ -32,12 +32,16 @@
         display: inline-block;
         }
     }
-  
+    
+
+    /* Reference defaultConfig */
+    $site-logo-width-sm: nth($site-logo-width, 1);
+    $site-logo-width-lg: nth($site-logo-width, 2);
     .sticky-logo img {
-        width: nth($site-logo-width, 1);
+        width: $site-logo-width-sm;
 
         @include bp(screen-md) {
-            width: nth($site-logo-width, 2);
+            width: $site-logo-width-lg;
             overflow: hidden;
         }
     } 
