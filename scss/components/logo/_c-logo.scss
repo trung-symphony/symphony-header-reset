@@ -33,7 +33,8 @@
          }
      }
      
-     .sticky-logo img {
+     .sticky-logo img,
+     .header-section .sticky-logo {
          @include bp(screen-md) {
              width: nth($site-logo-width, 2);
              overflow: hidden;
