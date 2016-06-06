@@ -15,10 +15,6 @@
     background-color: transparent;
     opacity: 1;
     @include layer(promotion-banner);
-
-    @include bp(screen-md) {
-        background: $site-promo-banner-bg;
-    }
 }
 
 
@@ -47,8 +43,16 @@
 }
 
 
+.promo-banner__box {
+    @extend .l-constrained-width;
+    
+    @include bp(screen-md) {
+        background: $site-promo-banner-bg;
+    }
+}
+
+
 .promo-banner__container--primary {
-  @extend .l-constrained-width;
   position: relative;
   padding-left: 0;
   text-align: center;
