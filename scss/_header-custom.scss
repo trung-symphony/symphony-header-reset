@@ -57,7 +57,7 @@
  * [1] Push menu to the right (away from logo) by "x" px
  */
 .sticky-nav__container {
-  @extend .l-constrained-width;
+  @extend .sp-l-constrained-width;
 
   @include bp(screen-md) {
     position: relative;
