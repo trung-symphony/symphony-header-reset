@@ -45,6 +45,7 @@
 
 .promo-banner__box {
     @extend .sp-l-constrained-width;
+    position: relative;
     
     @include bp(screen-md) {
         background: $site-promo-banner-bg;
