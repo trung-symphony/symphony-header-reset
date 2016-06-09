@@ -34,7 +34,7 @@ $twitter: -96px -0px 48px 48px !default;
 //-----------------
 // Custom Sprites
 //-----------------
-@mixin custom-sprite($sprite) {
+@mixin symphony-custom-sprite($sprite) {
     @include sprite($sprite);
     background-image: $sprite-image;
 }
