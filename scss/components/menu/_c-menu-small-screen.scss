@@ -6,12 +6,6 @@
   margin-bottom: 0;
 }
 
-.nested-menu-mobile .nesting-level-two a {
-    @include bp(screen-max-md) {
-        display: block !important;
-    }
-}
-
 // Hide menu item "Home"
  .nested-menu-mobile > .panel-heading:first-child {
     @include bp(screen-max-md) {
